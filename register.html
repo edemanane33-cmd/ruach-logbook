@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Register — Ruach Filled Ministries</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <header class="top">
+    <img src="assets/logo.png" class="logo small" alt="logo"/>
+    <div>
+      <h1>Register — Ruach Filled Ministries</h1>
+      <p class="muted">Please fill your details below</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="reg-form" class="card form-card">
+      <label>Full Name
+        <input id="name" type="text" required placeholder="Jane Doe" />
+      </label>
+
+      <label>Contact (phone or email)
+        <input id="contact" type="text" placeholder="+233 24 000 0000 or email@example.com" />
+      </label>
+
+      <label>Category
+        <select id="category">
+          <option value="Member">Member</option>
+          <option value="Visitor">Visitor</option>
+          <option value="Guest">Guest</option>
+        </select>
+      </label>
+
+      <label>Feedback (optional)
+        <textarea id="feedback" rows="3" placeholder="Any feedback..."></textarea>
+      </label>
+
+      <div class="actions">
+        <button id="submit-btn" type="submit" class="btn primary">Register</button>
+        <button id="clear-btn" type="button" class="btn secondary">Clear</button>
+      </div>
+
+      <p id="status" class="muted"></p>
+    </form>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
