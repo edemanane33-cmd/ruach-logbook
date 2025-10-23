@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Admin — Ruach Filled Ministries</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light admin">
+  <main class="container" style="max-width:720px;margin-top:28px">
+    <div class="card">
+      <img src="assets/logo.png" class="logo small" alt="logo"/>
+      <h2>Admin Login</h2>
+      <label>Password
+        <input id="admin-pass" type="password" placeholder="Enter admin password" />
+      </label>
+      <div class="actions">
+        <button id="login-btn" class="btn primary">Login</button>
+      </div>
+      <p class="muted">Admin user: <strong>admin</strong></p>
+    </div>
+
+    <div id="controls" class="card" style="display:none">
+      <h3>Admin Controls</h3>
+      <div class="actions">
+        <button id="export-btn" class="btn primary">Export CSV</button>
+        <button id="clear-btn" class="btn secondary">Clear All Entries</button>
+      </div>
+      <p class="muted">The attendee list is hidden — exports will include all records.</p>
+    </div>
+  </main>
+
+  <script type="module" src="admin.js"></script>
+  <script type="module" src="firebase.js"></script>
+</body>
+</html>
